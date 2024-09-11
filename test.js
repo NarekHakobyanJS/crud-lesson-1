@@ -1,9 +1,16 @@
-// CRUD
-// Create Read Update Delete
-// POST GET PUT||PATCH DELETE
-// api/users 
-// status code 
+// const EventEmitter = require('events')
+
+// const emiter = new EventEmitter()
+
+// emiter.on('valod', (data) => console.log(data));
+
+// emiter.emit('valod', 'barev Valod dzya')
 
 
-/// / <= home html
-/// /api/users <= users
+fetch('http://localhost:3003/api/users/', {
+    method : "POST",
+    headers : {
+        "Content-Type" : "application/json"
+    },
+    body : JSON.stringify({name : "Avetis", age : 45})
+})
